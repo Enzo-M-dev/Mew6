@@ -1,0 +1,42 @@
+
+.banner {
+  background-color: #005AC594;
+  height: 146px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+
+}
+
+.banner::after{
+  width:100px;
+  background-color: rgb(99, 70, 160);
+
+}
+
+.brand {
+  position: absolute;
+  width: 280px;
+  height: 92px;
+  left: 130px;
+  top: 27px;
+}
+
+.nav-primary{
+  position: absolute;
+  width: 419px;
+  height: 39px;
+  left: 60rem; 
+  top: 48px;
+}
+
+.nav-primary a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #FFFFFF;
+}

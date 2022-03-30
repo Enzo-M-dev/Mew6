@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/repeater",
+	"version": "0.1.0",
+	"title": "Example - repeater block",
+	"category": "widgets",
+	"icon": "visibility",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+    "content": {
+      "type": "array"
+    }
+  },
+	"textdomain": "gutenpride",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
