@@ -29,11 +29,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const ALLOWED_MEDIA_TYPES = ['image'];
-function Edit(_ref) {
-  let {
+function Edit(props) {
+  const {
     attributes,
     setAttributes
-  } = _ref;
+  } = props;
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)();
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.URLInputButton, {
     url: attributes === null || attributes === void 0 ? void 0 : attributes.link,
@@ -72,6 +72,20 @@ function Edit(_ref) {
     labels: {
       title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('The Image')
     }
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
+    label: "classtxt",
+    value: attributes === null || attributes === void 0 ? void 0 : attributes.classtxt,
+    options: [{
+      label: 'BG',
+      value: 'homee'
+    }, {
+      label: 'TEL',
+      value: 'tel'
+    }, {
+      label: 'GIFT',
+      value: 'abo'
+    }],
+    onChange: classtxt => setAttributes(classtxt)
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.MediaUpload, {
     onSelect: media => setAttributes({
       imageUrl: media.url,
@@ -79,10 +93,10 @@ function Edit(_ref) {
     }),
     allowedTypes: ALLOWED_MEDIA_TYPES,
     value: attributes === null || attributes === void 0 ? void 0 : attributes.imageId,
-    render: _ref2 => {
+    render: _ref => {
       let {
         open
-      } = _ref2;
+      } = _ref;
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Button, {
         onClick: open
       }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Replace the image'));
@@ -147,7 +161,8 @@ function save(_ref) {
   } = _ref;
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save();
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    style: `--bg-url: url(${attributes === null || attributes === void 0 ? void 0 : attributes.imageUrl})`
+    style: `url(${attributes === null || attributes === void 0 ? void 0 : attributes.imageUrl})`,
+    className: attributes === null || attributes === void 0 ? void 0 : attributes.classtxt
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null), (attributes === null || attributes === void 0 ? void 0 : attributes.imageUrl) && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: attributes === null || attributes === void 0 ? void 0 : attributes.imageUrl,
     alt: ""

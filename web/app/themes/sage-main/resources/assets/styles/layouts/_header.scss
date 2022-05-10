@@ -1,42 +1,79 @@
+.header{
+position: absolute;
+width: 419px;
+height: 39px;
+left: 891px;
+top: 48px;
 
+}
 .banner {
-  background-color: #005AC594;
-  height: 146px;
-  width: 100%;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
-
+  background: #005AC5;
 }
-
-.banner::after{
-  width:100px;
-  background-color: rgb(99, 70, 160);
-
+.banner .nav .a{
+  color:#FFFFFF;
 }
+.banner .nav {
+  @apply list-none p-0 flex flex-wrap;
 
-.brand {
-  position: absolute;
-  width: 280px;
-  height: 92px;
-  left: 130px;
-  top: 27px;
-}
-
-.nav-primary{
-  position: absolute;
-  width: 419px;
-  height: 39px;
-  left: 60rem; 
-  top: 48px;
-}
-
-.nav-primary a {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-
   color: #FFFFFF;
+}
+.acceuil{
+  position: absolute;
+  width: 65px;
+  height: 28px;
+  left: 891px;
+  top: 59px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+.pricing{
+  
+position: absolute;
+width: 77px;
+height: 28px;
+left: 1007px;
+top: 59px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+.contact{
+  position: absolute;
+width: 85px;
+height: 28px;
+left: 1135px;
+top: 59px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+.lan{
+  position: absolute;
+width: 47px;
+height: 29px;
+left: 1263px;
+top: 58px;
+
+background: #FFFFFF;
+border-radius: 5px;
 }

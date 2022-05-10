@@ -1,5 +1,3 @@
-
-
 @extends('layouts.app')
 
 @section('content')
@@ -12,5 +10,3 @@
     {!! get_search_form(false) !!}
   @endif
 @endsection
-
-

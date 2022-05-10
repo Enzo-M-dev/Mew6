@@ -35,14 +35,4 @@ class App extends Controller
     {
         return get_template_directory_uri() . '/assets/images/logo.svg';
     }
-
-    public static function getLanguageOption()
-    {
-        if( !function_exists('pll_the_languages') ) return;
-
-        return array(
-            'language_menu' => pll_the_language( array ('raw' => 1 ) ),
-            'current_language' => pll_current_language()
-        );
-    }
 }

@@ -3,8 +3,12 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 export default function save( { attributes } ) {
 	return (
-		<div { ...useBlockProps.save() }>
-			<h1>{attributes?.title}</h1>
-		</div>
+		<section { ...useBlockProps.save() } className="homee">
+			<div>
+				<h1>{attributes?.title}</h1>
+				<span>{attributes?.subtitle}</span>
+				<button>TRY FOR FREE</button>
+			</div>
+		</section>
 	);
 }

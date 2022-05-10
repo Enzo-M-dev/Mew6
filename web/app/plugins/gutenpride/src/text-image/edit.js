@@ -1,13 +1,14 @@
 import { __ } from '@wordpress/i18n';
 import {
 	MediaUpload, MediaPlaceholder, MediaUploadCheck, InspectorControls,
-	useBlockProps, RichText, URLInputButton } from '@wordpress/block-editor';
+	useBlockProps, RichText, URLInputButton, SelectControl  } from '@wordpress/block-editor';
 import { BaseControl, Button } from '@wordpress/components';
 import './editor.scss';
 
 const ALLOWED_MEDIA_TYPES = ['image'];
 
-export default function Edit( { attributes, setAttributes } ) {
+export default function Edit( props ) {
+	const { attributes, setAttributes } = props;
 	const blockProps = useBlockProps();
 	return (
 		<div>
@@ -40,6 +41,16 @@ export default function Edit( { attributes, setAttributes } ) {
 					multiple={false}
 					labels={{ title: __('The Image') }}
 				/>
+				<SelectControl
+            		label="classtxt"
+					value={ attributes?.classtxt }
+            		options={ [
+               			{ label: 'BG', value: 'homee' },
+                		{ label: 'TEL', value: 'tel' },
+                		{ label: 'GIFT', value: 'abo' },
+            			] }
+           			 onChange={ ( classtxt ) => setAttributes( classtxt ) }
+        		/>
 					<MediaUploadCheck>
 						<MediaUpload
 							onSelect={(media) => setAttributes({ imageUrl: media.url, imageId: media.id })}

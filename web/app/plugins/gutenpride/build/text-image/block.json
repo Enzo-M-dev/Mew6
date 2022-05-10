@@ -24,6 +24,9 @@
 			"type": "string",
 			"source": "html",
 			"selector": "p"
+		},
+		"classtxt":{
+			"type":"string"
 		}
   },
 	"textdomain": "gutenpride",

@@ -2,10 +2,10 @@ import { __ } from '@wordpress/i18n';
 import { PlainText, useBlockProps } from '@wordpress/block-editor';
 import './editor.scss';
 
-export default function Edit( { attributes, setAttributes } ) {
-	return (
+export default function Edit( props ) {
+	const { attributes, setAttributes } = props;
+	return(
 		<div { ...useBlockProps() }>
-			
 			<PlainText
 				className={"block-editor-plain-text-title"}
 				placeholder={__('Title')}
@@ -14,7 +14,6 @@ export default function Edit( { attributes, setAttributes } ) {
 					setAttributes({ title })
 				}}
 			/>
-
 			<PlainText
 				className={"block-editor-plain-text-subtitle"}
 				placeholder={__('Sous-titre')}
@@ -23,7 +22,6 @@ export default function Edit( { attributes, setAttributes } ) {
 					setAttributes({ subtitle })
 				}}
 			/>
-
 		</div>
 	);
 }

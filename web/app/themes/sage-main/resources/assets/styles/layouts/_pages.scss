@@ -1,5 +1,483 @@
 body {
-  position: relative;
-  height: 5806px;
+
   background: #006BEA;
+}
+
+//HOME de la page
+.homee {
+  position: absolute;
+  width: 1920px;
+  height: 889px;
+  left: 0px;
+  top: 124px;
+  background-image: url(http://localhost/bedrock/web/app/uploads/2022/03/test.png);
+}
+
+.homee h1 {
+  position: absolute;
+  width: 629px;
+  height: 56.05px;
+  left: 134px;
+  top: 360.52px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.homee span {
+  position: absolute;
+  width: 644px;
+  height: 54.11px;
+  left: 134px;
+  top: 473.58px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #FFFFFF;
+}
+
+.homee p {
+  position: absolute;
+  width: 194px;
+  height: 27.06px;
+  left: 135px;
+  top: 554.75px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #FFFFFF;
+}
+
+.homee button {
+  position: absolute;
+  width: 215px;
+  height: 72.47px;
+  left: 134px;
+  top: 608.86px;
+
+  background: #EC2C7B;
+  border-radius: 5px;
+}
+
+//Card music
+
+.victoire {
+  position: absolute;
+  width: 1180px;
+  height: 1244px;
+  left: 130px;
+  top: 1175px;
+}
+
+.victoire h1 {
+  color: #FFFFFF;
+}
+
+.victoire .cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.victoire .card {
+  width: 30%;
+  height: 1200px;
+}
+
+.victoire .card_info {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 0 0 15px 15px;
+  padding: 15px;
+}
+
+.victoire .card_info .btn {
+  width: fit-content;
+}
+
+.victoire .card_info .gras {
+  margin-right: 2rem;
+}
+
+.victoire button {
+  position: absolute;
+  width: 300px;
+  height: 75px;
+  left: 570px;
+  top: 638px;
+  background: #001A49;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+
+// Applis
+.tel {
+  position: absolute;
+  width: 1920px;
+  height: 1056px;
+  left: -36px;
+  top: 1939px;
+
+  background: #FFFFFF;
+}
+
+.tel h1 {
+  position: absolute;
+  width: 629px;
+  height: 56.05px;
+  left: 130px;
+  top: 360px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  text-transform: uppercase;
+
+  color: #00184A;
+}
+
+.tel img {
+  position: absolute;
+  width: 358px;
+  height: 663.85px;
+  left: 952px;
+  top: 125px;
+}
+
+.tel span {
+  position: absolute;
+  width: 644px;
+  height: 54.11px;
+  left: 130px;
+  top: 480px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #001A49;
+}
+
+.tel .butel {
+  position: absolute;
+  width: 300px;
+  height: 75px;
+  left: 130px;
+  top: 560px;
+  background: #EC2C7B;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+// avis client
+.abo {
+  position: absolute;
+  width: 1184px;
+  height: 384px;
+  left: 126px;
+  top: 3195px;
+}
+
+.abo h1 {
+  position: absolute;
+  width: 616px;
+  height: 56px;
+  left: 737px;
+  top: 60px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.abo span {
+  position: absolute;
+  width: 573px;
+  height: 54px;
+  left: 737px;
+  top: 216px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #FFFFFF;
+}
+
+.abo .buabo {
+  position: absolute;
+  width: 300px;
+  height: 75px;
+  left: 737px;
+  top: 374px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #001A49;
+
+}
+
+//GIT CARD
+.conc {
+  position: absolute;
+  width: 1920px;
+  height: 930px;
+  left: -42px;
+  top: 3873px;
+  background: #FFFFFF;
+}
+
+.conc h1 {
+  position: absolute;
+  width: 617px;
+  height: 67px;
+  left: 629px;
+  top: 93px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  text-transform: uppercase;
+
+  color: #001A49;
+
+}
+
+.conc .image4 {
+  position: absolute;
+  width: 304px;
+  height: 382px;
+  left: 271px;
+  top: 353px;
+}
+
+.conc .image5 {
+  position: absolute;
+  width: 311px;
+  height: 410px;
+  left: 671px;
+  top: 353px;
+}
+
+.conc .image6 {
+  position: absolute;
+  width: 355px;
+  height: 410px;
+  left: 1047px;
+  top: 353px;
+}
+
+.conc .imgg {
+  position: absolute;
+  width: 263px;
+  height: 263px;
+  left: 78px;
+  top: -21px;
+  border-radius: 50%;
+}
+
+.conc .titre {
+  position: absolute;
+  height: 30px;
+  left: 16.39%;
+  right: 72.43%;
+  top: 261px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #00184A;
+}
+
+.conc span {
+  position: absolute;
+  width: 317px;
+  height: 28px;
+  left: 60px;
+  top: 300px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #EC2C7B;
+}
+
+//FAQ
+.question {
+  position: absolute;
+  width: 1920px;
+  height: 887px;
+  left: -44px;
+  top: 4796px;
+  background: #00184A;
+  text-align: center;
+}
+
+.question h1 {
+  position: absolute;
+  width: 417px;
+  height: 106px;
+  left: 640px;
+  top: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.question .qrec1 {
+
+  position: absolute;
+  width: 1172px;
+  height: 97px;
+  left: 268px;
+  top: 287px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.question .qrec2 {
+
+  position: absolute;
+  width: 1172px;
+  height: 97px;
+  left: 268px;
+  top: 387px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.question .qrec3 {
+
+  position: absolute;
+  width: 1172px;
+  height: 176px;
+  left: 268px;
+  top: 487px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.question .qrep1 {
+
+  position: absolute;
+  width: 618px;
+  height: 28px;
+  left: 41px;
+  top: 38px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #00184A;
+
+}
+
+.question .qrep2 {
+
+  position: absolute;
+  width: 618px;
+  height: 28px;
+  left: -41px;
+  top: 38px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #00184A;
+
+}
+
+.question .qrep3 {
+
+  position: absolute;
+  width: 618px;
+  height: 28px;
+  left: -84px;
+  top: 38px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #00184A;
+
+}
+
+.question .qrep4 {
+  position: absolute;
+  width: 1052px;
+  height: 62px;
+  left: 41px;
+  top: 80px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #001A49;
+
+}
+
+.question .imgfle {
+  position: absolute;
+  width: 29.23px;
+  height: 30px;
+  left: 1123.8px;
+  top: 8px;
+}
+.question .imgflec {
+  position: absolute;
+  width: 29.23px;
+  height: 30px;
+  left: 1123.8px;
+  top: 8px;
+  transform: rotate(-180deg);
 }

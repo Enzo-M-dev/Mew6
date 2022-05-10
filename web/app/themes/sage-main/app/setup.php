@@ -7,6 +7,9 @@ use Roots\Sage\Assets\JsonManifest;
 use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
 
+require_once(get_theme_root() . '/sage-main/post-types/album.php');
+require_once(get_theme_root() . '/sage-main/taxonomies/artist.php');
+
 /**
  * Theme assets
  */

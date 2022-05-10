@@ -1,0 +1,26 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/texte-blanc/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-text {
+  background: #fff;
+  padding: 6rem 0;
+}
+
+.wp-block-create-block-text .block-editor-text-title {
+  font-size: 3rem;
+  background: #fff;
+  color: black;
+}
+
+.wp-block-create-block-text .block-editor-text-subtitle {
+  font-size: 2rem;
+  background: #fff;
+  color: black;
+}
+
+/*# sourceMappingURL=index.css.map*/

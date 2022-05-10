@@ -1,0 +1,22 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-text {
+	background: #fff;
+	padding: 6rem 0;
+}
+
+.wp-block-create-block-text .block-editor-text-title {
+	font-size: 3rem;
+	background: #fff;
+	color: black;
+}
+
+.wp-block-create-block-text .block-editor-text-subtitle {
+	font-size: 2rem;
+	background: #fff;
+	color: black;
+}
